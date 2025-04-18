@@ -38,43 +38,24 @@ Welcome to your post-lecture project! In this activity, you’ll create two vers
 
 ### Step 2: Create the Tailwind Page
 
-#### Option A: Use Tailwind via NPM (Full Setup)
-1. Create a new folder for your Tailwind project and run:
-   ```bash
-   npm init -y
-   npm install -D tailwindcss
-   npx tailwindcss init
-   ```
-2. Create a folder structure:
-   ```
-   tailwind-version/
-   ├── index.html
-   ├── styles/
-   │   └── input.css
-   └── dist/
-       └── output.css
-   ```
-3. In `styles/input.css`, add:
-   ```css
-   @tailwind base;
-   @tailwind components;
-   @tailwind utilities;
-   ```
-4. Update your `package.json` with a build script:
-   ```json
-   "scripts": {
-     "build": "npx tailwindcss -i ./styles/input.css -o ./dist/output.css --watch"
-   }
-   ```
-5. Link the compiled CSS in `index.html`:
+#### Option A: Use the CDN (Quick Start)
+1. Inside `tailwind-version/index.html`, include the Tailwind CDN:
    ```html
-   <link href="./dist/output.css" rel="stylesheet">
+   <!-- tailwind-version/index.html -->
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Leaf & Root - Tailwind</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+   </head>
+   <body class="bg-gray-100">
+     <!-- Add header, card, and footer here using Tailwind utility classes -->
+   </body>
+   </html>
    ```
-6. Build the CSS:
-   ```bash
-   npm run build
-   ```
-
+   
 ### Step 3: Compare and Reflect
 - How does styling feel different with Bootswatch vs. Tailwind?
 - Which do you prefer for custom design?
