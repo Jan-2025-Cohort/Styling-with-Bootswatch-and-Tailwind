@@ -11,19 +11,6 @@ Welcome to your post-lecture project! In this activity, you’ll create two vers
 
 ---
 
-## 🗂️ Project Structure
-
-```
-leaf-and-root-project/
-├── bootswatch-version/
-│   └── index.html
-├── tailwind-version/
-│   └── index.html
-└── README.md
-```
-
----
-
 ## ✅ Instructions
 
 ### Step 1: Create the Bootswatch Page
@@ -51,25 +38,7 @@ leaf-and-root-project/
 
 ### Step 2: Create the Tailwind Page
 
-#### Option A: Use the CDN (Quick Start)
-1. Inside `tailwind-version/index.html`, include the Tailwind CDN:
-   ```html
-   <!-- tailwind-version/index.html -->
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-     <meta charset="UTF-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <title>Leaf & Root - Tailwind</title>
-     <script src="https://cdn.tailwindcss.com"></script>
-   </head>
-   <body class="bg-gray-100">
-     <!-- Add header, card, and footer here using Tailwind utility classes -->
-   </body>
-   </html>
-   ```
-
-#### Option B: Use Tailwind via NPM (Full Setup)
+#### Option A: Use Tailwind via NPM (Full Setup)
 1. Create a new folder for your Tailwind project and run:
    ```bash
    npm init -y
@@ -127,7 +96,3 @@ leaf-and-root-project/
 
 ## 🌟 Bonus Challenge
 Try creating a second card or making your layout responsive with Bootstrap's grid or Tailwind's flex/grid utilities!
-
----
-
-Happy coding! 🌱
